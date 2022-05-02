@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+  width: 100%;
+  height: auto;
+}
+#myHeader, .btnClose{
+    cursor: pointer;
+    color: #ffffff;
+    z-index: 1;
+    background-color: #00410a; 
+    background-image: linear-gradient(to bottom right, #00410a, #15d100);
+}
+#myHeader{
+  display: flex;
+  justify-content: space-between;
+}
+#myHeader a{
+  text-decoration: none;
+  color: #fff;
+}
+#myHeader a:hover{
+  text-decoration: none;
+  color: #ff5900;
+}
+#myHeader h4 {
+  margin-right: 20em;
+  margin-top: 10px;
+}
+#iconCart, .btnClose{
+    font-size: 30px;
+}
+h1{
+    padding-left: 5rem;
+    margin-bottom: 0;
+}
+h5{ 
+  font-weight: bold;
+}
+.numShopping{
+    font-size: 15px;
+    top: -20px;
+    border-radius: 50%;
+    background-color: rgb(221, 99, 0);
+    padding: 0 5px;
+    text-align: center;
+    width: 30px;
+}
+
+.btnClose  {
+    padding: 0.55rem;  
+}
+#myCart{
+    position: absolute;
+    width: 700px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background-color: #eee;
+    z-index: 2;
+    display: none;
+    overflow:scroll;
+}
+
+.card:hover .imgCart{
+    padding: 10px;
+    transition: 0.4s;
+    scroll-behavior: smooth;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .container-fluid {
+  padding-top: 102px;
+}
+.size14{
+    text-align: center;
+    font-size: 14px;
+}
+.btnDeleteAll{
+  padding: 3px 3px;
+}
+.table td{
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
